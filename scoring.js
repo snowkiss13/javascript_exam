@@ -1,4 +1,5 @@
 // DOMの読み込みが終わったらfunction()の中の処理を実行します。
+// Hello world.
 $(document).ready(function () {
     // 「国語、英語、数学、理科、社会」の点数（入力値）を取得して合計点と平均点を出すロジック
     function score_indicate() {
