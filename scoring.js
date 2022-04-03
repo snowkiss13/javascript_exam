@@ -1,5 +1,4 @@
 // DOMの読み込みが終わったらfunction()の中の処理を実行します。
-// Hello world.
 $(document).ready(function () {
     // 「国語、英語、数学、理科、社会」の点数（入力値）を取得して合計点と平均点を出すロジック
     function score_indicate() {
@@ -22,6 +21,8 @@ $(document).ready(function () {
         // 「平均点：」に各教科の平均点を出力する処理を記述する。
         // ヒント：変数「average」に平均値を出して代入しましょう(平均をとりたい数の合計点数(sum) / 全体の個数)
         // ヒント：全体の個数はlengthメソッドを使って求めます。(lengthメソッド: 文字列の長さや配列の要素数などを取得するメソッド)
+        let average = sum / subject_points.length;
+        $("#average_indicate").text(average);
     };
     // 平均点数を取得し、取得した平均点数から「A、B、C、D」にランク分けするロジックを記述する。
     function get_achievement() {
