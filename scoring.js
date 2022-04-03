@@ -35,8 +35,17 @@ $(document).ready(function () {
             return "A";
         }
         // もし「averageIndicate」が60以上なら"B"を返します。
+        if (averageIndicate >= 60) {
+            return "B";
+        }
         // もし「averageIndicate」が40以上なら"C"を返します。
+        if (averageIndicate >= 40) {
+            return "C";
+        }
         // もし「averageIndicate」がそれ以外なら"D"を返します。
+        else {
+            return "D";
+        }
     };
     // 各教科の点数を取得し、取得した点数から「合格、不合格」の判断を下すロジックを作ります。
     function get_pass_or_failure() {
