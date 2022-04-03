@@ -66,7 +66,6 @@ $(document).ready(function () {
                 break;
             }
         }
-    }
         // ヒント：配列の繰り返し処理について調べてみましょう。
         return judge;
     };
